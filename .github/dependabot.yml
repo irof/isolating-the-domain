@@ -1,0 +1,39 @@
+version: 2
+updates:
+- package-ecosystem: gradle
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "20:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.dddjava.jig-gradle-plugin
+    versions:
+    - 2021.1.4
+    - 2021.1.5
+    - 2021.2.1
+    - 2021.2.2
+    - 2021.2.3
+    - 2021.2.4
+    - 2021.2.4.1
+    - 2021.3.1
+    - 2021.3.2
+    - 2021.3.2.1
+    - 2021.3.3
+    - 2021.3.4
+    - 2021.3.4.3
+    - 2021.4.1
+    - 2021.4.1.1
+    - 2021.4.2
+    - 2021.4.3
+  - dependency-name: org.springframework.boot
+    versions:
+    - 2.4.2
+    - 2.4.3
+    - 2.4.4
+  - dependency-name: org.springframework.boot:spring-boot-dependencies
+    versions:
+    - 2.4.2
+  - dependency-name: org.junit:junit-bom
+    versions:
+    - 5.7.0
